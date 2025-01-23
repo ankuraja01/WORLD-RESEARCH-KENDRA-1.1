@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Research Kendra</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>World Research Kendra</h1>
+        <p>Innovating science through experiments</p>
+        <div id="search-bar">
+            <input type="text" id="search" placeholder="Search..." />
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experiments">Experiments</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to World Research Kendra</h2>
+            <p>We are dedicated to advancing science through rigorous experiments and research collaboration.</p>
+        </section>
+        <section id="experiments">
+            <h2>Latest Experiments</h2>
+            <div>
+                <label for="filter-category">Filter by Category:</label>
+                <select id="filter-category">
+                    <option value="all">All</option>
+                    <option value="physics">Physics</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                </select>
+            </div>
+            <div id="experiment-list">
+                <!-- JavaScript will populate this -->
+            </div>
+        </section>
+        <section id="team">
+            <h2>Our Team</h2>
+            <p>Meet the brilliant minds behind our innovative research.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="submit-experiment">
+            <h2>Submit Your Experiment</h2>
+            <form id="experiment-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="physics">Physics</option>
+                    <option value="biology">Biology</option>
+                    <option value="chemistry">Chemistry</option>
+                </select>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 World Research Kendra. All rights reserved.</p>
+        <div id="theme-toggle">
+            <label for="dark-mode">Dark Mode:</label>
+            <input type="checkbox" id="dark-mode" />
+        </div>
+    </footer>
+</body>
+</html>
